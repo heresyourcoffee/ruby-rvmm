@@ -1,1 +1,17 @@
-[]
+        
+[
+  {
+    "patchName": "Custom branding",
+    "options": [
+      {
+        "key": "appName",
+        "value": "Ruby-YT"
+      },
+      {
+        "key": "iconPath",
+        "value": "Icons"
+      }
+    ]
+  }
+]
+        

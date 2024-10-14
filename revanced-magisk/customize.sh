@@ -165,5 +165,5 @@ if [ -d "/data/adb/modules/zygisk-assistant" ]; then
 fi
 
 ui_print "* Done"
-ui_print "  by j-hc (github.com/j-hc)"
+ui_print "  by oshi no ko nerd Adi <3"
 ui_print " "
