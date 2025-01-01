@@ -1,26 +1,22 @@
-enable-magisk-update = false
+enable-magisk-update = true
+parallel-jobs = 1
 rv-brand = ""
 
-[Ruby-YT]
-build-mode = "module"
-excluded-patches = ""
-included-patches = "'Downloads' 'Disable precise seeking gesture' 'Seekbar tapping' 'Swipe controls' 'Navigation buttons' 'Hide player buttons' 'Disable suggested video end screen' 'Hide endscreen cards' 'Disable fullscreen ambient mode' 'Disable auto captions' 'Custom branding' 'SponsorBlock' 'Remove background playback restrictions' 'Bypass URL redirects' 'Open links externally' 'Remove tracking query parameter' 'Remember video quality' 'Video ads' 'Hide ads'"
-exclusive-patches = true
-version = "auto"
-archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube" # fallback
-module-prop-name = "Ruby-YT"
-arch = "arm64-v8a"
-
 [Ruby-Music]
-build-mode = "module"
-excluded-patches = "'Permanent repeat' 'Permanent shuffle' 'Hide category bar' 'GmsCore support'"
-included-patches = "'Remove upgrade button' 'Hide 'Get Music Premium' label' 'Remove background playback restrictions' 'Bypass certificate checks' 'Hide video ads' 'Enable exclusive audio playback'"
-exclusive-patches = true
-version = "auto"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
-module-prop-name = "Ruby-Music"
-# apkmirror-dpi = "160-640dpi"
 arch = "arm64-v8a"
+build-mode = "module"
+excluded-patches = "'GmsCore support'"
+module-prop-name = "Ruby-Music"
+
+[Ruby-YT]
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube/"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+arch = "arm64-v8a"
+build-mode = "module"
+included-patches = "'Hide ads' 'Video ads' 'Downloads' 'Disable precise seeking gesture' 'Seekbar tapping' 'Swipe controls' 'Disable auto captions' 'Navigation buttons' 'Hide player overlay buttons' 'Hide endscreen cards' 'Disable fullscreen ambient mode' 'Hide info cards' 'Disable suggested video end screen' 'SponsorBlock' 'Theme' 'Remove background playback restrictions' 'Check watch history domain name resolution' 'Bypass URL redirects' 'Open links externally' 'Remove tracking query parameter' 'Spoof video streams' 'Remember video quality'"
+exclusive-patches = true
+module-prop-name = "Ruby-YT"
+patcher-args = "-OiconPath=Icons "
